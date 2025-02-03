@@ -2,6 +2,7 @@ package com.example.location.activities;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -14,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.location.R;
 
-public class Authentification extends AppCompatActivity implements DialogInterface.OnClickListener {
+public class Authentification extends AppCompatActivity implements View.OnClickListener {
 
     LinearLayout layout1;
     LinearLayout layout2;
@@ -41,8 +42,8 @@ public class Authentification extends AppCompatActivity implements DialogInterfa
         layout2=(LinearLayout)findViewById(R.id.Layout2);
         bttauth=(Button) findViewById(R.id.authButton);
         bttauth.setOnClickListener(this);
-        //....
-
+        bttacc.setOnClickListener(this);
+        // instancier les autres elements graphiques
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -51,8 +52,13 @@ public class Authentification extends AppCompatActivity implements DialogInterfa
         });
     }
 
-    @Override
-    public void onClick(DialogInterface dialogInterface, int i) {
 
+
+    @Override
+    public void onClick(View view) {
+        if(view.getId()==bttacc.getId()){
+            layout1.setVisibility(View.GONE);
+            layout2.setVisibility(View.VISIBLE);
+        }
     }
 }
