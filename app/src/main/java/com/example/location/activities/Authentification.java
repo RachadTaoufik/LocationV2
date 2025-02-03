@@ -41,6 +41,7 @@ public class Authentification extends AppCompatActivity implements View.OnClickL
         layout1=(LinearLayout) findViewById(R.id.Layout1);
         layout2=(LinearLayout)findViewById(R.id.Layout2);
         bttauth=(Button) findViewById(R.id.authButton);
+        bttacc=(Button) findViewById(R.id.acchButton);
         bttauth.setOnClickListener(this);
         bttacc.setOnClickListener(this);
         // instancier les autres elements graphiques
@@ -52,13 +53,15 @@ public class Authentification extends AppCompatActivity implements View.OnClickL
         });
     }
 
-
-
     @Override
     public void onClick(View view) {
         if(view.getId()==bttacc.getId()){
             layout1.setVisibility(View.GONE);
             layout2.setVisibility(View.VISIBLE);
+        } else if (view.getId()==bttauth.getId()) {
+
         }
+        // La suite
+
     }
 }

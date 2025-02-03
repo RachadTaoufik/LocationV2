@@ -114,6 +114,18 @@
         android:layout_height="wrap_content"
         android:hint="Email"
         />
+        <Button
+            android:id="@+id/confirmeButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="confirmer"
+            android:textSize="25dp"/>
+        <Button
+            android:id="@+id/annulerButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Anuler"
+            android:textSize="25dp"/>
 </LinearLayout>
 
 </LinearLayout>
