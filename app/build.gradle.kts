@@ -30,6 +30,8 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
+
 }
 
 dependencies {
@@ -39,7 +41,7 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.firebase.auth)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.ext.junit)
+    implementation(libs.firebase.database)
+    implementation(libs.firebase.firestore)
     androidTestImplementation(libs.espresso.core)
 }
