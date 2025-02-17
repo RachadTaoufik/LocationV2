@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".activities.Authentification">
+    tools:context=".activities.AuthentificationActivity">
 
     <LinearLayout
         android:id="@+id/Layout1"
@@ -37,7 +37,7 @@
             android:text="Authentification"
             android:textSize="25dp"/>
         <Button
-            android:id="@+id/acchButton"
+            android:id="@+id/creerCompteButton"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="Creer Compte"
@@ -136,10 +136,28 @@
             android:layout_gravity="center"
             />
         <Button
+            android:id="@+id/offresButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Gestion des Offres"
+            android:textSize="25dp"/>
+        <Button
+            android:id="@+id/demandesButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Gestion des demandes"
+            android:textSize="25dp"/>
+        <Button
+            android:id="@+id/profilButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Gestion du profil"
+            android:textSize="25dp"/>
+        <Button
             android:id="@+id/deconnexionButton"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Deconnexion"
+            android:text="deconnexion"
             android:textSize="25dp"/>
     </LinearLayout>
 
